@@ -1,0 +1,266 @@
+.App {
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  width: 100vw; /* Changed from max-width: 100% to width: 100vw */
+  margin: 0;  /* Remove auto margin */
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  box-sizing: border-box; /* Add this to include padding in width calculation */
+}
+
+header {
+  background: #1a73e8;
+  color: white;
+  padding: 20px;
+  margin: -20px -20px 20px -20px;
+  text-align: left;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.subtitle {
+  margin: 5px 0 0 0;
+  opacity: 0.9;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 0 20px; /* Add this */
+}
+
+.stat-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stat-box h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.stat-box p {
+  margin: 10px 0 0 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blue { color: #1a73e8; }
+.orange { color: #f5a623; }
+.red { color: #d93025; }
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%; /* Added to ensure full width */
+}
+
+.search-container input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 200px;
+  background-color: white; /* Add this line */
+  color: #333; /* Add this line for better text contrast */
+}
+
+.search-container button {
+  padding: 12px 24px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.search-container button:hover {
+  background: #1557b0;
+}
+
+.search-container button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: #fde7e9;
+  color: #d93025;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.files-table {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow-x: auto; /* Added to handle table overflow */
+  width: 100%; /* Added to ensure full width */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; /* Added to ensure minimum width */
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  background: #f8f9fa;
+  color: #666;
+  font-weight: 500;
+  border-bottom: 2px solid #eee;
+}
+
+td {
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
+
+.unique {
+  color: #34a853;
+  background: #e6f4ea;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.duplicate {
+  color: #f5a623;
+  background: #fef7e0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.actions button:hover {
+  background: #f5f5f5;
+}
+
+.loading {
+  opacity: 0.7;
+}
+
+.files-table {
+  width: 100%;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.files-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.files-table th,
+.files-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.files-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #444;
+}
+
+.files-table td {
+  color: #333;
+}
+
+.files-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.unique {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.duplicate {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  padding: 4px 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.actions button:hover {
+  opacity: 0.8;
+}
+
+.delete:hover {
+  color: #d32f2f;
+}
+
+.download:hover {
+  color: #1976d2;
+}
