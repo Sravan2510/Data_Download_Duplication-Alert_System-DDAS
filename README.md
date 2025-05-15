@@ -10,13 +10,8 @@ DDAS is a web application that helps users identify and manage duplicate files i
 ## Installation Steps
 ### 1. Clone or Download the Repository
 ```
-git clone https://github.com/
-yourusername/
-data-download-duplication-alert-sys
-tem.git
-cd 
-data-download-duplication-alert-sys
-tem
+git clone https://github.com/Sravan2510/data-download-duplication-alert-system.git
+cd data-download-duplication-alert-system
 ```
 ### 2. Backend Setup
 1. Navigate to the backend directory:
