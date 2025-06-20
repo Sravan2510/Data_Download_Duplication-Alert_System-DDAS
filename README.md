@@ -6,7 +6,6 @@ DDAS is a web application that helps users identify and manage duplicate files i
 ## Prerequisites
 - Python 3.x
 - Node.js and npm
-- Git (optional)
 ## Installation Steps
 ### 1. Clone or Download the Repository
 ```
